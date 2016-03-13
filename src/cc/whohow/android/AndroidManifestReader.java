@@ -229,9 +229,6 @@ public class AndroidManifestReader implements XMLReader {
 		buffer.position(chunkOffset + chunkSize);
 	}
 
-	/**
-	 * 解析字符串
-	 */
 	private void parseString(int offset, ByteBuffer buffer) {
 		buffer.position(offset);
 		short stringLength = buffer.getShort(); // String Length
@@ -272,9 +269,6 @@ public class AndroidManifestReader implements XMLReader {
 		contentHandler.endPrefixMapping(getString(prefix));
 	}
 
-	/**
-	 * 解析开始标签
-	 */
 	private void parseStartTagChunk(ByteBuffer buffer) throws SAXException {
 		buffer.getInt(); // Chunk Type
 		buffer.getInt(); // Chunk Size
