@@ -4,14 +4,12 @@
 AndroidManifestReader、ApkInputSource分别实现了org.xml.sax.XMLReader、org.xml.sax.InputSource接口，
 可以充分利用Java标准库中的代码进行更多的处理。
 
-
 如转为Document：
 ```
 transformer.transform(
 new SAXSource(new AndroidManifestReader(), new ApkInputSource(new URL("http://xxx.apk"))),
 new DOMResult(document));
 ```
-
 
 或者输出为XML：
 ```
