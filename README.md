@@ -77,7 +77,7 @@ Binary AndroidManifest.xml
 ```
 
 ## 实现
-### 1. 使用```java.nio.ByteBuffer```操作字节序及字节。
+### 1. 使用```java.nio.ByteBuffer```操作字节序及字节
 
 ```
 ByteBuffer.order
@@ -85,7 +85,7 @@ ByteBuffer.get
 ByteBuffer.getInt
 ByteBuffer.getFloat
 ```
-### 2. 按照文件格式自顶向下解析。
+### 2. 按照文件格式自顶向下解析
 
 ```
 parse
@@ -100,7 +100,7 @@ parse
   parseEndTagChunk
   parseTextChunk
 ```
-### 3. 实现SAX相关接口以便重用代码。 
+### 3. 实现SAX相关接口以便重用代码
  
 ```
 public class AndroidManifestReader implements XMLReader {
@@ -119,7 +119,7 @@ new SAXSource(new AndroidManifestReader(), new ApkInputSource(new URL("http://xx
 new StreamResult(writer));
 ```
 
-## Licence
+## License
 [The MIT License (MIT)](https://opensource.org/licenses/MIT)
 
 ## 参考文档
