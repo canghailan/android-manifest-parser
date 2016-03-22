@@ -150,6 +150,10 @@ public class AndroidManifestReader implements XMLReader {
 	}
 
 	public void parse(ByteBuffer buffer) throws SAXException {
+		// clear
+		prefixMapping.clear();
+		stringPool.clear();
+		
 		buffer.order(ByteOrder.LITTLE_ENDIAN); // Ensure LITTLE_ENDIAN
 		buffer.getInt(); // Magic
 		buffer.getInt(); // File Size
