@@ -3,7 +3,7 @@
 一个纯Java、实现了SAX接口、无任何第三方依赖的 AndroidManifest.xml 解析工具。
 
 ## AndroidManifest.xml文件格式
-![AndroidManifest.xml](http://static.whohow.cc/images/android-manifest-parser/android-manifest.png)
+![AndroidManifest.xml](https://raw.github.com/canghailan/android-manifest-parser/master/AndroidManifest.xml.png)
 
 ```
 Binary AndroidManifest.xml
